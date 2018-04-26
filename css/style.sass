@@ -1,0 +1,238 @@
+$orange : #E18A07
+$gray: #887766
+
+
+*
+  margin: 0
+  padding: 0
+  font-family: 'Source Sans Pro', sans-serif
+  box-sizing: border-box
+.white
+  color: white !important
+body
+  .welcome-section
+    height: 720px
+    position: relative
+    overflow: hidden
+    .logo
+      text-align: center
+      line-height: 550px
+      margin-top: 75px
+      color: #f7e27b
+
+    .video-style
+      #video
+        position: absolute
+        top: 0
+        left: 0
+        min-width: 100%
+        min-height: 100%
+        z-index: -11
+    .navigation
+      text-align: center
+      height: 70px
+      a
+        text-transform: capitalize
+        position: relative
+        line-height: 70px
+        margin-right: 23px
+        margin-bottom: 4px
+        text-decoration-style: none
+        text-decoration: none
+        color: white
+        font-weight: 400
+        font-size: 19px
+        &:last-child
+          margin-right: 0
+        &:hover
+          color: $orange
+          &:before
+            visibility: visible
+            transform: scaleX(1)
+        &:before
+          content: ""
+          position: absolute
+          width: 100%
+          height: 2px
+          bottom: -4px
+          left: 0
+          background-color: $orange
+          visibility: hidden
+          transform: scaleX(0)
+          transition: all 0.3s ease-in-out
+  .titles
+    margin: 40px 20px
+    font-size: 34px
+    font-weight: 300
+    text-transform: uppercase
+    color: #444444
+  .sub-titles
+    margin: 40px auto
+    border: solid $orange 2px
+    width: 140px
+    height: 1.5px
+    color: $orange
+  .nos-categories
+    padding-top: 25px
+    text-align: center
+    width: 100%
+    margin: 0 auto
+    overflow: hidden
+    .cat
+      text-decoration: none
+      color: white
+      height: 290px
+      width: 27%
+      overflow: hidden
+      margin: 25px
+      display: inline-block
+      border-radius: 1%
+      background-size: cover
+      background-repeat: no-repeat
+
+      &:hover
+        //filter: grayscale(70%)
+        div
+          transform: scale(1.08)
+      h2
+
+        font-size: 25px
+        margin-bottom: 8px
+      p
+        font-weight: 300
+        font-style: italic
+      hr
+        color: white
+        border: 1px solid white
+        width: 70%
+        height: 2px
+        margin: 4px auto
+
+    .cat1
+      background: url("../images/winksun/mar/53.jpg") center center
+      width: 100%
+      height: 100%
+      padding-top: 140px
+      transition: all .3s ease
+    .cat2
+      background: url("../images/winksun/anif/1.jpg") center center
+      width: 100%
+      height: 100%
+      padding-top: 140px
+      transition: all .3s ease
+    .cat3
+      background: url("../images/winksun/baptem/45.jpg") center center
+      width: 100%
+      height: 100%
+      padding-top: 140px
+      transition: all .3s ease
+    .cat4
+      background: url("../images/winksun/art/41.jpg") center center
+      width: 100%
+      height: 100%
+      padding-top: 140px
+      transition: all .3s ease
+    .cat5
+      background: url("../images/winksun/arch/12.jpg") center center
+      max-width: 100%
+      height: 100%
+      padding-top: 140px
+      transition: all .3s ease
+    .vidd
+      background: url("../images/winksun/art/44.jpg") center center
+      background-size: cover
+      max-width: 100%
+      height: 100%
+      padding-top: 140px
+      transition: all .3s ease
+    .video
+      width: 26%
+      background-repeat: no-repeat
+      background-size: cover !important
+
+  .nos-packs
+    width: 100%
+    margin: 75px auto
+    background:  #0f0c29
+    background: linear-gradient(to right, #0f0c29, #302b63, #24243e)
+    text-align: center
+    padding-top: 30px
+    padding-bottom: 100px
+    .pack
+      display: inline-block
+      text-align: center
+      height: 336px
+      width: 25%
+      background: white
+      margin: 35px 10px
+      padding-top: 20px
+      hr
+        width: 50%
+        margin: 20px auto
+        border: 1px solid #ccc
+
+      h3
+        font-size: 16px
+        text-transform: uppercase
+        color: $orange
+      p
+        margin: 10px auto
+        font-weight: 400
+  .apropos
+    text-align: center
+    width: 90%
+    padding-bottom: 100px
+    margin: 0 auto
+    p
+      font-size: 20px
+      font-weight: 300
+      text-transform: uppercase
+  .contact
+    text-align: center
+    color: white
+    padding-top: 25px
+    height: 400px
+    background:  #4ecdc4
+    background: linear-gradient(to right, #4ecdc4, #556270)
+    h4
+      margin: 10px auto
+      font-weight: 300
+      font-size: 22px
+    h5
+      padding-top: 80px
+      text-transform: capitalize
+      font-size: 20px
+      font-weight: 300
+  #back-to-top
+    position: fixed
+    bottom: 40px
+    right: 40px
+    z-index: 9999
+    width: 100px
+    font-weight: 500
+    text-transform: uppercase
+    height: 40px
+    text-align: center
+    line-height: 30px
+    background: #000
+    color: white
+    padding-top: 4px
+    cursor: pointer
+    border: 0
+    border-radius: 2px
+    text-decoration: none
+    transition: opacity 0.2s ease-out
+    opacity: 0
+    &:hover
+      background: $orange
+    &.show
+      opacity: 1
+
+@media screen and (max-width: 830px)
+  body
+    .nos-categories
+      .cat
+        width: 60%
+    .nos-packs
+      .pack
+        width: 60%
